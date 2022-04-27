@@ -1,5 +1,6 @@
 /* eslint-disable no-restricted-globals */
 import React from "react";
+import { ViewAll } from "./Viewport.styled";
 
 const fullData = [
     {
@@ -63,15 +64,21 @@ export default function Viewport(props) {
     })
 
     return(
-        <div>
-            <select onClick={()=> updateTotalData(event)} >
+        <ViewAll>
+            <label htmlFor="select-level">Level:</label>
+            <select id="select-level" onClick={()=> updateTotalData(event)} >
                 <option value="0">All Levels</option>
                 <option value="1">Level 1</option>
                 <option value="2">Level 2</option>
                 <option value="3">Level 3</option>
                 <option value="4">Level 4</option>
             </select>
+            <ul>
+                <li>Level</li>
+                <li>Total Users</li>
+                <li>Total Staked</li>
+            </ul>
             {toggleState ? initialDisplayTable : displayTable}
-        </div>
+        </ViewAll>
     )
 }
