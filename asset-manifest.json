@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/level-selector/static/js/main.6e43a5fb.js",
+    "index.html": "/level-selector/index.html",
+    "main.6e43a5fb.js.map": "/level-selector/static/js/main.6e43a5fb.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.6e43a5fb.js"
+  ]
+}
